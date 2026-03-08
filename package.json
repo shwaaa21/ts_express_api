@@ -5,7 +5,9 @@
 	"main": "index.js",
 	"scripts": {
 		"build": "npx tsc",
-		"start": "npx tsc && node dist/index.js"
+		"start": "npx tsc && node dist/index.js",
+		"test": "vitest",
+		"test:run": "vitest run"
 	},
 	"keywords": [],
 	"author": "",
@@ -13,12 +15,16 @@
 	"type": "commonjs",
 	"dependencies": {
 		"cors": "^2.8.5",
+		"errore": "^0.14.0",
 		"express": "^5.1.0"
 	},
 	"devDependencies": {
 		"@tsconfig/node22": "^22.0.2",
 		"@types/cors": "^2.8.19",
 		"@types/express": "^5.0.4",
-		"typescript": "^5.9.3"
+		"@types/supertest": "^7.2.0",
+		"supertest": "^7.2.2",
+		"typescript": "^5.9.3",
+		"vitest": "^4.0.18"
 	}
 }
